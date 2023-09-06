@@ -1,0 +1,164 @@
+/*
+ margin corresponde ao espaçamento externo da caixa em que o elemento está até os cantos da página
+
+padding corresponde ao espaçamento interno do elemento em relação a sua própria caixa
+
+background corresponde ao fundo, no qualé possível colocar uma cor sólida única ou em gradiente
+
+Utilizar o site: https://cssgradient.io/
+
+box-sizing: context-box não é uma boa prática, pois ao aumentarmos uma imagem/elemento, o que ocorre é que a CAIXA DE CONTEÚDO (em que
+o elemento está) aumenta e não ele em si, causando possíveis distorções. O ideal é utilizar box-sizing: border-box
+
+*/
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: rgb(204, 160, 240); */
+
+
+}
+
+#menu {
+    display: flex;
+    /* selecionar o layout flexbox */
+    list-style: none;
+    /* tirar as bolinhas de cada item da lista */
+    padding: 25px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#menu a {
+    color: white;
+    /* aplicar uma cor á fonte */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* aplicar uma fonte */
+    font-size: 17px;
+    /* aumentar o tamanho da fonte */
+    text-decoration: none;
+    /*tirar o subliinhado do link*/
+    flex-direction: row;
+    /* alinhar um ao lado do outro  */
+    margin: 19px;
+    /* atribuir uma margem a cada item */
+}
+
+/* mudar cor ao passar o mouse */
+#menu a:hover {
+    color: rgb(183, 58, 255);
+}
+
+header {
+    background: rgb(4,0,70);
+background: linear-gradient(90deg, rgba(4,0,70,1) 0%, rgba(8,0,32,1) 0%, rgba(23,23,85,1) 48%, rgba(0,16,52,1) 100%);
+      padding-bottom: 20px;
+}
+
+.apresentacao {
+  display: flex;
+height: 330px;
+}
+
+h1,span {
+    font-size: 22px;
+    color: rgb(245, 233, 255); /* cor da letra */
+    font-family: 'Archivo', sans-serif;
+    line-height: 170%;  /* Define a altura da linha em relação à próxima */
+    /* letter-spacing: 4px; */
+}
+
+
+.right {
+    flex: 5;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left {
+    flex: 5;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid black; /* borda, expressura da borda, cor da borda */
+    outline: none; /* borda e remover borda */
+    cursor: pointer; 
+    text-transform: uppercase; /* tranforma em capslock */
+    font-family: 'Archivo', sans-serif;
+    padding: 6px; /* espaçamento interno */
+    border-radius: 5px; /* arredondamento */
+    font-size: 14px;
+}
+
+.btnContact {
+    background-color: rgb(91, 73, 255);
+    margin-top: 25px;
+
+}
+
+.btnContact:hover{
+background: rgb(183, 58, 255);
+color: white;
+}
+
+.containerServicos {
+    background-color: rgb(157, 140, 255);
+    display: flex;
+    justify-content: center;
+    padding: 40px;  /* Retirar depois */
+}
+
+.itemServico1, .itemServico3 {
+    border: 1px solid rgb(56, 0, 211);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 25px 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.itemServico2, .itemServico4 {
+    border: 1px solid rgb(0, 56, 211);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 25px 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.containerServicos h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    color:black;
+}
+
+.containerServicos img {
+      width: 60px;
+}
+.itemServico1:hover, .itemServico3:hover {
+    background: rgb(163, 161, 255);
+    cursor: pointer;
+}
+
+.itemServico2:hover, .itemServico4:hover {
+    background: rgb(214, 224, 255);
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+h3 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(157, 140, 255);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
