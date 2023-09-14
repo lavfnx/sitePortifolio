@@ -102,7 +102,7 @@ h1,span {
 }
 
 .btnContact:hover{
-background: rgb(183, 58, 255);
+background: rgb(170, 84, 255);
 color: white;
 }
 
@@ -110,7 +110,7 @@ color: white;
     background-color: rgb(157, 140, 255);
     display: flex;
     justify-content: center;
-    padding: 40px;  /* Retirar depois */
+    padding: 10px;
 }
 
 .itemServico1, .itemServico3 {
@@ -141,7 +141,7 @@ color: white;
       width: 60px;
 }
 .itemServico1:hover, .itemServico3:hover {
-    background: rgb(163, 161, 255);
+    background: rgb(214, 224, 255);
     cursor: pointer;
 }
 
@@ -160,5 +160,70 @@ h3 {
     background-color: rgb(157, 140, 255);
     padding-top: 30px;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
+
+.containerSobreMim {
+    display: flex;
+    background-color:  rgb(157, 140, 255) ;
+    padding-bottom: 50px;
+  }
+  
+  .containerSobreMim .left {
+    background-color: rgb(157, 140, 255);
+    margin-right: 200px;
+    margin-left: 120px;
+    flex: 7;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    line-height: 30px;
+  }
+  
+  .containerSobreMim .right {
+    background-color: rgb(157, 140, 255);
+    flex: 3;
+
+    
+  }
+  
+  #sobremim h3 {
+    background-color: rgb(157, 140, 255);
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  video {
+border-radius: 10px;
+border: 2px solid rgb(111, 0, 255)
+  }
+  
+  .socialMedia {
+   display: flex;
+   align-items: center;
+  }
+
+  .socialMedia img{
+    width: 30px;
+
+  }
+
+  h2{
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .socialMedia p {
+    margin-left: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: black;
+  }
+
+  .socialMedia p:hover {
+    color: rgb(57, 21, 221);
+  }
+  .socialMedia a {
+    text-decoration: none;
+  }
