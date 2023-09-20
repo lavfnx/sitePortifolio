@@ -14,216 +14,333 @@ o elemento está) aumenta e não ele em si, causando possíveis distorções. O 
 
 * {
 
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* background-color: rgb(204, 160, 240); */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: rgb(204, 160, 240); */
 
 
 }
 
-#menu {
-    display: flex;
-    /* selecionar o layout flexbox */
-    list-style: none;
-    /* tirar as bolinhas de cada item da lista */
-    padding: 25px;
-    justify-content: center;
-    margin-bottom: 25px;
-}
 
 #menu a {
-    color: white;
-    /* aplicar uma cor á fonte */
-    font-family: 'Roboto Condensed', sans-serif;
-    /* aplicar uma fonte */
-    font-size: 17px;
-    /* aumentar o tamanho da fonte */
-    text-decoration: none;
-    /*tirar o subliinhado do link*/
-    flex-direction: row;
-    /* alinhar um ao lado do outro  */
-    margin: 19px;
-    /* atribuir uma margem a cada item */
+  color: white;
+  /* aplicar uma cor á fonte */
+  font-family: 'Roboto Condensed', sans-serif;
+  /* aplicar uma fonte */
+  font-size: 17px;
+  /* aumentar o tamanho da fonte */
+  text-decoration: none;
+  /*tirar o subliinhado do link*/
+  flex-direction: row;
+  /* alinhar um ao lado do outro  */
+  margin: 19px;
+  /* atribuir uma margem a cada item */
 }
 
 /* mudar cor ao passar o mouse */
 #menu a:hover {
-    color: rgb(183, 58, 255);
+  color: rgb(183, 58, 255);
 }
 
 header {
-    background: rgb(4,0,70);
-background: linear-gradient(90deg, rgba(4,0,70,1) 0%, rgba(8,0,32,1) 0%, rgba(23,23,85,1) 48%, rgba(0,16,52,1) 100%);
-      padding-bottom: 20px;
+  background: rgb(4, 0, 70);
+  background: linear-gradient(90deg, rgba(4, 0, 70, 1) 0%, rgba(8, 0, 32, 1) 0%, rgba(23, 23, 85, 1) 48%, rgba(0, 16, 52, 1) 100%);
+  padding-bottom: 20px;
 }
 
 .apresentacao {
   display: flex;
-height: 330px;
+  height: 330px;
 }
 
-h1,span {
-    font-size: 22px;
-    color: rgb(245, 233, 255); /* cor da letra */
-    font-family: 'Archivo', sans-serif;
-    line-height: 170%;  /* Define a altura da linha em relação à próxima */
-    /* letter-spacing: 4px; */
+h1,
+span {
+  font-size: 22px;
+  color: rgb(245, 233, 255);
+  /* cor da letra */
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 170%;
+  /* Define a altura da linha em relação à próxima */
+  /* letter-spacing: 4px; */
 }
 
 
 .right {
-    flex: 5;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
+  flex: 5;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .left {
-    flex: 5;
-    text-align: center;
+  flex: 5;
+  text-align: center;
 }
 
 .btn {
-    border: 2px solid black; /* borda, expressura da borda, cor da borda */
-    outline: none; /* borda e remover borda */
-    cursor: pointer; 
-    text-transform: uppercase; /* tranforma em capslock */
-    font-family: 'Archivo', sans-serif;
-    padding: 6px; /* espaçamento interno */
-    border-radius: 5px; /* arredondamento */
-    font-size: 14px;
+  border: 2px solid black;
+  /* borda, expressura da borda, cor da borda */
+  outline: none;
+  /* borda e remover borda */
+  cursor: pointer;
+  text-transform: uppercase;
+  /* tranforma em capslock */
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 6px;
+  /* espaçamento interno */
+  border-radius: 5px;
+  /* arredondamento */
+  font-size: 14px;
 }
 
 .btnContact {
-    background-color: rgb(91, 73, 255);
-    margin-top: 25px;
+  background-color: rgb(91, 73, 255);
+  margin-top: 25px;
 
 }
 
-.btnContact:hover{
-background: rgb(170, 84, 255);
-color: white;
+.btnContact:hover {
+  background: rgb(170, 84, 255);
+  color: white;
 }
 
 .containerServicos {
-    background-color: rgb(157, 140, 255);
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  background-color: rgb(157, 140, 255);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: -8px;
 }
 
-.itemServico1, .itemServico3 {
-    border: 1px solid rgb(56, 0, 211);
-    border-radius: 5px;
-    margin: 15px;
-    padding: 25px 10px;
-    text-align: center;
-    width: 20%;
+.itemServico1,
+.itemServico3 {
+  border: 1px solid rgb(56, 0, 211);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  width: 20%;
 }
 
-.itemServico2, .itemServico4 {
-    border: 1px solid rgb(0, 56, 211);
-    border-radius: 5px;
-    margin: 15px;
-    padding: 25px 10px;
-    text-align: center;
-    width: 20%;
+.itemServico2,
+.itemServico4 {
+  border: 1px solid rgb(0, 56, 211);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 25px 10px;
+  text-align: center;
+  width: 20%;
 }
 
 .containerServicos h2 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 17px;
-    color:black;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 17px;
+  color: black;
 }
 
 .containerServicos img {
-      width: 60px;
-}
-.itemServico1:hover, .itemServico3:hover {
-    background: rgb(214, 224, 255);
-    cursor: pointer;
+  width: 60px;
 }
 
-.itemServico2:hover, .itemServico4:hover {
-    background: rgb(214, 224, 255);
-    cursor: pointer;
+.itemServico1:hover,
+.itemServico3:hover {
+  background: rgb(214, 224, 255);
+  cursor: pointer;
+}
+
+.itemServico2:hover,
+.itemServico4:hover {
+  background: rgb(214, 224, 255);
+  cursor: pointer;
 }
 
 html {
-    scroll-behavior: smooth;
-} 
+  scroll-behavior: smooth;
+}
 
 h3 {
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(157, 140, 255);
-    padding-top: 30px;
-    padding-bottom: 5px;
-    font-size: 15px;
-    text-transform: uppercase;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(157, 140, 255);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .containerSobreMim {
-    display: flex;
-    background-color:  rgb(157, 140, 255) ;
-    padding-bottom: 50px;
-  }
-  
-  .containerSobreMim .left {
-    background-color: rgb(157, 140, 255);
-    margin-right: 200px;
-    margin-left: 120px;
-    flex: 7;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: left;
-    line-height: 30px;
-  }
-  
-  .containerSobreMim .right {
-    background-color: rgb(157, 140, 255);
-    flex: 3;
+  display: flex;
+  background-color: rgb(157, 140, 255);
+  padding-bottom: 50px;
+  margin-top: -8px;
 
-    
-  }
-  
-  #sobremim h3 {
-    background-color: rgb(157, 140, 255);
-    padding-top: 30px;
-    padding-bottom: 15px;
+}
+
+.containerSobreMim .left {
+  background-color: rgb(157, 140, 255);
+  margin-right: 200px;
+  margin-left: 120px;
+  flex: 7;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  line-height: 30px;
+}
+
+.containerSobreMim .right {
+  background-color: rgb(157, 140, 255);
+  flex: 3;
+
+
+}
+
+#sobremim h3 {
+  background-color: rgb(157, 140, 255);
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+video {
+  border-radius: 10px;
+  border: 2px solid rgb(111, 0, 255)
+}
+
+.socialMedia {
+  display: flex;
+
+}
+
+.socialMedia img {
+  width: 30px;
+
+}
+
+h2 {
+
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.socialMedia p {
+  margin-left: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.socialMedia p:hover {
+  color: rgb(57, 21, 221);
+}
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+#contato {
+  background-color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.containerContato {
+  background-color: rgb(157, 140, 255);
+
+}
+
+.containerContato h2 {
+  font-size: 20px;
+
+}
+
+form {
+  font-size: 16px;
+  max-width: 500px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  /* background-color: rgb(157, 140, 255); */
+}
+
+input,
+textarea {
+  background-color: rgb(198, 189, 255);
+  /*cor do fundo da caixa de texto */
+  width: 200px;
+  /* largura da caixa */
+  padding: 10px;
+  /* espaçamento interno da caixa de texto (tamanho)*/
+  color: rgb(61, 40, 182);
+  /* cor da borda */
+  margin-bottom: 10px;
+  /* espaçamento acima das caixas */
+  -webkit-border-radius: 5px;
+  /* arredonda a caixa */
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  /* grossura da borda */
+
+}
+
+.displayContato {
+  display: flex;
+}
+
+form h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mensagem {
+  margin-left: 40px;
+}
+
+textarea {
+  resize: none;
+  width: 350px;
+  height: 120px;
+}
+
+.mensagem input {
+  width: 160px;
+  cursor: pointer;
+}
+
+.mensagem input:hover {
+
+  background-color: rgb(61, 40, 182);
+  color: white;
+}
+
+.mapa {
+  margin-left: 90px;
+}
+
+iframe {
+  border-radius: 5px;
+  margin-top: -30px;
+}
+
+.navColor {
+
+  background: linear-gradient(90deg, rgba(4, 0, 70, 1) 0%, rgba(8, 0, 32, 1) 0%, rgba(23, 23, 85, 1) 48%, rgba(0, 16, 52, 1) 100%);
+  justify-content: center;
+}
+
+.container-fluid {
+
+  background: linear-gradient(90deg, rgba(4, 0, 70, 1) 0%, rgba(8, 0, 32, 1) 0%, rgba(23, 23, 85, 1) 48%, rgba(0, 16, 52, 1) 100%);
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+  margin: 7px;
+}
+
+  .navbar-toggler-icon {
+
+
   }
 
-  video {
-border-radius: 10px;
-border: 2px solid rgb(111, 0, 255)
-  }
-  
-  .socialMedia {
-   display: flex;
-   align-items: center;
-  }
-
-  .socialMedia img{
-    width: 30px;
-
-  }
-
-  h2{
-    padding: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  .socialMedia p {
-    margin-left: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    color: black;
-  }
-
-  .socialMedia p:hover {
-    color: rgb(57, 21, 221);
-  }
-  .socialMedia a {
-    text-decoration: none;
+  .navbar {
+    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
